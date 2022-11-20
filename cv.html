@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="rubrik hvr-backward">
+        <a href="index.html"
+          ><img src="images/Home.png" class="home" alt="Homepage" /> Jack
+          Lindhammar</a
+        >
+      </h1>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="list-item"><a href="cv.html" class="active">CV</a></li>
+          <li class="list-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="list-item"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="column-cv fade-in-border border">
+      <h2>Arbetsplatser och utbildning</h2>
+      <br />
+      <p id="data"></p>
+    </div>
+
+    <script>
+      fetch("./data.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          for (var i = 0; i < data.length; i++) {
+            document.getElementById("data").innerHTML +=
+              data[i].workplace + " " + data[i].period + "<br />" + "<br />";
+          }
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+    
+  
+}
+
+.rubrik {
+    font-size: 48px;
+
+}
+
+.home {
+    height: 36px;
+    width: 36px;
+   
+}
+
+.main-nav {
+    flex: 1;
+
+}
+
+.main-nav-list {
+    float: right;
+    margin-right: 10px;
+    
+}
+
+.list-item {
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    transition-duration: 0.5s;
+}
+
+.list-item:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.active {
+    font-weight: 1000;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.row {
+    width: 50%;
+margin: auto;
+margin-top: 10%;
+display:flex;
+
+}
+
+.profile {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+    
+}
+
+.column {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.fade-in-image { 
+    animation: fadeIn 2s; 
+
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+.column-2 {
+    flex: 50%;
+    margin-left: 40px;
+    
+}
+
+.fade-in-text {
+    animation: fadeIn 1s;
+}
+
+.fade-in-text-2 {
+    animation: fadeIn 2s;
+}
+
+.fade-in-text-3 {
+    animation: fadeIn 2s;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+    .main-header {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+        
+    }
+    .column-2 {
+        flex: 50%;
+    }
+    }
+
+    @media (max-width: 426px) {
+        .profile {
+            width: 150px;
+            height: 150px;
+        }
+       
+    }
+
+.border-2 img {
+    transition: .5s ease;
+    }
+    
+    .border-2 img:hover{
+    box-shadow: 0 0 0 10px #000000;
+    transition: .5s ease;
+    }
+
+    .hvr-backward {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+      }
+      .hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+      }
+
+
+
+    /* CV CSS */
+
+
+
+    .row-cv {
+        display: flex;
+        margin-top: 5%;
+    }
+    
+    .column-cv {
+        flex: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+        
+      }
+    
+      .fade-in-border {
+        border-radius: 20px;
+        border-style: solid;
+
+        
+      }
+    
+    .competencies {
+        list-style-type: none;
+        
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    
+    }
+    
+    .fade-in-text {
+        animation: fadeIn 2s;
+    }
+    
+    @media (max-width: 1024px) {
+        .main-header {
+            flex-direction: column;
+        }
+       .row-cv {
+        flex-direction: row;
+       }
+    }
+    
+    .border {
+        transition: .5s ease;
+        }
+        
+        .border:hover{
+        box-shadow: 0 0 0 10px #000000;
+        transition: .5s ease;
+        }
+
+
+/* Kontakt CSS */
+
+.container {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    
+}
+
+.contact {
+    margin-top: 8%;
+}
+
+
+.fade-in-text {
+    animation: fadeIn 2s;
+}
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: black;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+  @media (max-width: 1024px) {
+        .main-header {
+            flex-direction: column;
+        }
+    
+    }
+
+/* Portfolio CSS */
+
+.portfolio {
+    margin-top: 5%;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    
+}
+
+.portfolio-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+.column-portfolio {
+    flex: 33.33%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.titles {
+    text-decoration: underline;
+}
+
+/* Guessing game CSS */
+
+.gamecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+
+/* Modal CSS  */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modalbutton {
+    height: 50px;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+   
+  
+
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    
+
+}
+

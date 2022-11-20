@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="rubrik hvr-backward">
+        <a href="index.html"
+          ><img src="images/Home.png" class="home" alt="Homepage" /> Jack
+          Lindhammar</a
+        >
+      </h1>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="list-item"><a href="cv.html">CV</a></li>
+          <li class="list-item">
+            <a href="portfolio.html" class="active">Portfolio</a>
+          </li>
+          <li class="list-item"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="portfolio fade-in-text"></div>
+    <div class="portfolio-container">
+      <div class="column-portfolio fade-in-border border">
+        <br />
+        <h3 class="titles">Trafikljus</h3>
+        <br />
+        <img src="images/trafikljus.png" alt="Trafikljus" />
+      </div>
+      <div class="column-portfolio fade-in-border border">
+        <br />
+        <h3 class="titles">Number Guessing Game</h3>
+        <br />
+        <div class="gamecontainer">
+          <h3>Guess a number between 0-100.</h3>
+          <input type="text" placeholder="Input Number" id="guess" />
+          <button onclick="guessNumber()" id="my_btn">GUESS</button>
+          <div class="display">
+            <p id="message3"></p>
+            <p id="message2"></p>
+            <p id="message1"></p>
+          </div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
